@@ -8,7 +8,11 @@ function multiply (number1, number2){
     return Number(number1) * Number(number2)
 }
 function divide (number1, number2){
-    return Number(number1) / Number(number2)
+    if (number1 == 0 || number2 == 0){
+        return('Can\'t / By 0')
+    } else{
+        return Number(number1) / Number(number2)
+    }
 }
 
 
@@ -33,7 +37,11 @@ function displayNumber(element){
 }
 
 function getOperatorAndNumber1(element){
+    if (number1 != ""){
+        number1 = operate(operator, number1, calculatorDispaly.innerText)
+    } else {
     number1 = calculatorDispaly.innerText
+}
     console.log(number1);
     operator = element.innerText
     console.log(operator);
@@ -46,7 +54,7 @@ function operateAndGetNumber2(element){
     calculatorDispaly.innerText = operate(operator, number1, number2)
 }
 
-function clearDisplay(){
+function clearDisplay(element){
     calculatorDispaly.innerText = ""
     number1 = ""
     number2 = "" 
