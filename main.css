@@ -1,16 +1,31 @@
-body{
-    background-color: grey;
-    color: white;
+:root{
+    --background-calculatorButtons: black;
+    --button-fontSize : 2rem;
+    --displayFontSize: 3rem;
 }
 
 .result{
-    width:100px;
-    height: 20px;
-    background-color: white;
-    color: black;
+    height: 50px;
+    width: auto;
+    font-size: var(--displayFontSize);
 }
 
-.calculator{
-    border: 2px solid white;
+.row1 ,.row2,.row3,.row4{
+    background-color:var(--background-calculatorButtons);
+} 
+
+.row1 ,.row2,.row3,.row4 {
+    color: white;
+    display: flex;
+    justify-content: center;
+} 
+
+button{
+    color: white;
+    background-color: var(--background-calculatorButtons);
+    font-size: var(--button-fontSize);
+    padding: 2rem;
+    width: clamp(30px, 50%, 500px);
+    border: 2px white solid;
     
 }
