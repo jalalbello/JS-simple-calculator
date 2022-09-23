@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+    color: white;
+}
+
+.result{
+    width:100px;
+    height: 20px;
+    background-color: white;
+    color: black;
+}
+
+.calculator{
+    border: 2px solid white;
+    
+}
