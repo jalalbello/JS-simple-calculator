@@ -16,16 +16,14 @@
 
 .row1 ,.row2,.row3,.row4 {
     color: white;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 } 
 
 button{
     color: white;
     background-color: var(--background-calculatorButtons);
     font-size: var(--button-fontSize);
-    padding: 2rem;
-    width: clamp(30px, 50%, 500px);
+    padding : clamp(17px, 1rem, 2rem);
     border: 2px white solid;
-    
 }
